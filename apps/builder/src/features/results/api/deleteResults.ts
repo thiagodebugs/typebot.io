@@ -10,7 +10,7 @@ export const deleteResults = authenticatedProcedure
   .meta({
     openapi: {
       method: 'DELETE',
-      path: '/typebots/{typebotId}/results',
+      path: '/v1/typebots/{typebotId}/results',
       protect: true,
       summary: 'Delete results',
       tags: ['Results'],
@@ -36,8 +36,19 @@ export const deleteResults = authenticatedProcedure
         id: typebotId,
       },
       select: {
-        workspaceId: true,
         groups: true,
+        workspace: {
+          select: {
+            isSuspended: true,
+            isPastDue: true,
+            members: {
+              select: {
+                userId: true,
+                role: true,
+              },
+            },
+          },
+        },
         collaborators: {
           select: {
             userId: true,

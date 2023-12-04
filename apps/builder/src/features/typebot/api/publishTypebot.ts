@@ -19,7 +19,7 @@ export const publishTypebot = authenticatedProcedure
   .meta({
     openapi: {
       method: 'POST',
-      path: '/typebots/{typebotId}/publish',
+      path: '/v1/typebots/{typebotId}/publish',
       protect: true,
       summary: 'Publish a typebot',
       tags: ['Typebot'],
@@ -46,6 +46,14 @@ export const publishTypebot = authenticatedProcedure
         workspace: {
           select: {
             plan: true,
+            isSuspended: true,
+            isPastDue: true,
+            members: {
+              select: {
+                userId: true,
+                role: true,
+              },
+            },
           },
         },
       },

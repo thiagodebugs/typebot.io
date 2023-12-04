@@ -15,7 +15,7 @@ export const getPublishedTypebot = authenticatedProcedure
   .meta({
     openapi: {
       method: 'GET',
-      path: '/typebots/{typebotId}/publishedTypebot',
+      path: '/v1/typebots/{typebotId}/publishedTypebot',
       protect: true,
       summary: 'Get published typebot',
       tags: ['Typebot'],
@@ -52,6 +52,17 @@ export const getPublishedTypebot = authenticatedProcedure
         include: {
           collaborators: true,
           publishedTypebot: true,
+          workspace: {
+            select: {
+              isSuspended: true,
+              isPastDue: true,
+              members: {
+                select: {
+                  userId: true,
+                },
+              },
+            },
+          },
         },
       })
       if (

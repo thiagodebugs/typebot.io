@@ -9,7 +9,7 @@ export const getResult = authenticatedProcedure
   .meta({
     openapi: {
       method: 'GET',
-      path: '/typebots/{typebotId}/results/{resultId}',
+      path: '/v1/typebots/{typebotId}/results/{resultId}',
       protect: true,
       summary: 'Get result by id',
       tags: ['Results'],
@@ -33,8 +33,18 @@ export const getResult = authenticatedProcedure
       },
       select: {
         id: true,
-        workspaceId: true,
         groups: true,
+        workspace: {
+          select: {
+            isSuspended: true,
+            isPastDue: true,
+            members: {
+              select: {
+                userId: true,
+              },
+            },
+          },
+        },
         collaborators: {
           select: {
             userId: true,

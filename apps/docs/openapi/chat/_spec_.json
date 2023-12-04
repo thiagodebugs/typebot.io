@@ -2549,6 +2549,50 @@
                                                               "responseMapping"
                                                             ],
                                                             "additionalProperties": false
+                                                          },
+                                                          {
+                                                            "type": "object",
+                                                            "properties": {
+                                                              "credentialsId": {
+                                                                "type": "string"
+                                                              },
+                                                              "baseUrl": {
+                                                                "type": "string"
+                                                              },
+                                                              "apiVersion": {
+                                                                "type": "string"
+                                                              },
+                                                              "task": {
+                                                                "type": "string",
+                                                                "enum": [
+                                                                  "Create speech"
+                                                                ]
+                                                              },
+                                                              "model": {
+                                                                "type": "string"
+                                                              },
+                                                              "input": {
+                                                                "type": "string"
+                                                              },
+                                                              "voice": {
+                                                                "type": "string",
+                                                                "enum": [
+                                                                  "alloy",
+                                                                  "echo",
+                                                                  "fable",
+                                                                  "onyx",
+                                                                  "nova",
+                                                                  "shimmer"
+                                                                ]
+                                                              },
+                                                              "saveUrlInVariableId": {
+                                                                "type": "string"
+                                                              }
+                                                            },
+                                                            "required": [
+                                                              "task"
+                                                            ],
+                                                            "additionalProperties": false
                                                           }
                                                         ]
                                                       }
@@ -3585,6 +3629,15 @@
                                                 "maximum": 48,
                                                 "minimum": 0.01,
                                                 "description": "Expiration delay in hours after latest interaction"
+                                              }
+                                            },
+                                            "additionalProperties": false
+                                          },
+                                          "publicShare": {
+                                            "type": "object",
+                                            "properties": {
+                                              "isEnabled": {
+                                                "type": "boolean"
                                               }
                                             },
                                             "additionalProperties": false
@@ -6144,6 +6197,50 @@
                                                               "responseMapping"
                                                             ],
                                                             "additionalProperties": false
+                                                          },
+                                                          {
+                                                            "type": "object",
+                                                            "properties": {
+                                                              "credentialsId": {
+                                                                "type": "string"
+                                                              },
+                                                              "baseUrl": {
+                                                                "type": "string"
+                                                              },
+                                                              "apiVersion": {
+                                                                "type": "string"
+                                                              },
+                                                              "task": {
+                                                                "type": "string",
+                                                                "enum": [
+                                                                  "Create speech"
+                                                                ]
+                                                              },
+                                                              "model": {
+                                                                "type": "string"
+                                                              },
+                                                              "input": {
+                                                                "type": "string"
+                                                              },
+                                                              "voice": {
+                                                                "type": "string",
+                                                                "enum": [
+                                                                  "alloy",
+                                                                  "echo",
+                                                                  "fable",
+                                                                  "onyx",
+                                                                  "nova",
+                                                                  "shimmer"
+                                                                ]
+                                                              },
+                                                              "saveUrlInVariableId": {
+                                                                "type": "string"
+                                                              }
+                                                            },
+                                                            "required": [
+                                                              "task"
+                                                            ],
+                                                            "additionalProperties": false
                                                           }
                                                         ]
                                                       }
@@ -7193,6 +7290,15 @@
                                                 "maximum": 48,
                                                 "minimum": 0.01,
                                                 "description": "Expiration delay in hours after latest interaction"
+                                              }
+                                            },
+                                            "additionalProperties": false
+                                          },
+                                          "publicShare": {
+                                            "type": "object",
+                                            "properties": {
+                                              "isEnabled": {
+                                                "type": "boolean"
                                               }
                                             },
                                             "additionalProperties": false
@@ -10375,6 +10481,15 @@
                                     }
                                   },
                                   "additionalProperties": false
+                                },
+                                "publicShare": {
+                                  "type": "object",
+                                  "properties": {
+                                    "isEnabled": {
+                                      "type": "boolean"
+                                    }
+                                  },
+                                  "additionalProperties": false
                                 }
                               },
                               "additionalProperties": false
@@ -10521,6 +10636,15 @@
                                       "maximum": 48,
                                       "minimum": 0.01,
                                       "description": "Expiration delay in hours after latest interaction"
+                                    }
+                                  },
+                                  "additionalProperties": false
+                                },
+                                "publicShare": {
+                                  "type": "object",
+                                  "properties": {
+                                    "isEnabled": {
+                                      "type": "boolean"
                                     }
                                   },
                                   "additionalProperties": false
@@ -13132,6 +13256,50 @@
                                                               "responseMapping"
                                                             ],
                                                             "additionalProperties": false
+                                                          },
+                                                          {
+                                                            "type": "object",
+                                                            "properties": {
+                                                              "credentialsId": {
+                                                                "type": "string"
+                                                              },
+                                                              "baseUrl": {
+                                                                "type": "string"
+                                                              },
+                                                              "apiVersion": {
+                                                                "type": "string"
+                                                              },
+                                                              "task": {
+                                                                "type": "string",
+                                                                "enum": [
+                                                                  "Create speech"
+                                                                ]
+                                                              },
+                                                              "model": {
+                                                                "type": "string"
+                                                              },
+                                                              "input": {
+                                                                "type": "string"
+                                                              },
+                                                              "voice": {
+                                                                "type": "string",
+                                                                "enum": [
+                                                                  "alloy",
+                                                                  "echo",
+                                                                  "fable",
+                                                                  "onyx",
+                                                                  "nova",
+                                                                  "shimmer"
+                                                                ]
+                                                              },
+                                                              "saveUrlInVariableId": {
+                                                                "type": "string"
+                                                              }
+                                                            },
+                                                            "required": [
+                                                              "task"
+                                                            ],
+                                                            "additionalProperties": false
                                                           }
                                                         ]
                                                       }
@@ -14168,6 +14336,15 @@
                                                 "maximum": 48,
                                                 "minimum": 0.01,
                                                 "description": "Expiration delay in hours after latest interaction"
+                                              }
+                                            },
+                                            "additionalProperties": false
+                                          },
+                                          "publicShare": {
+                                            "type": "object",
+                                            "properties": {
+                                              "isEnabled": {
+                                                "type": "boolean"
                                               }
                                             },
                                             "additionalProperties": false
@@ -16727,6 +16904,50 @@
                                                               "responseMapping"
                                                             ],
                                                             "additionalProperties": false
+                                                          },
+                                                          {
+                                                            "type": "object",
+                                                            "properties": {
+                                                              "credentialsId": {
+                                                                "type": "string"
+                                                              },
+                                                              "baseUrl": {
+                                                                "type": "string"
+                                                              },
+                                                              "apiVersion": {
+                                                                "type": "string"
+                                                              },
+                                                              "task": {
+                                                                "type": "string",
+                                                                "enum": [
+                                                                  "Create speech"
+                                                                ]
+                                                              },
+                                                              "model": {
+                                                                "type": "string"
+                                                              },
+                                                              "input": {
+                                                                "type": "string"
+                                                              },
+                                                              "voice": {
+                                                                "type": "string",
+                                                                "enum": [
+                                                                  "alloy",
+                                                                  "echo",
+                                                                  "fable",
+                                                                  "onyx",
+                                                                  "nova",
+                                                                  "shimmer"
+                                                                ]
+                                                              },
+                                                              "saveUrlInVariableId": {
+                                                                "type": "string"
+                                                              }
+                                                            },
+                                                            "required": [
+                                                              "task"
+                                                            ],
+                                                            "additionalProperties": false
                                                           }
                                                         ]
                                                       }
@@ -17776,6 +17997,15 @@
                                                 "maximum": 48,
                                                 "minimum": 0.01,
                                                 "description": "Expiration delay in hours after latest interaction"
+                                              }
+                                            },
+                                            "additionalProperties": false
+                                          },
+                                          "publicShare": {
+                                            "type": "object",
+                                            "properties": {
+                                              "isEnabled": {
+                                                "type": "boolean"
                                               }
                                             },
                                             "additionalProperties": false
@@ -20958,6 +21188,15 @@
                                     }
                                   },
                                   "additionalProperties": false
+                                },
+                                "publicShare": {
+                                  "type": "object",
+                                  "properties": {
+                                    "isEnabled": {
+                                      "type": "boolean"
+                                    }
+                                  },
+                                  "additionalProperties": false
                                 }
                               },
                               "additionalProperties": false
@@ -21104,6 +21343,15 @@
                                       "maximum": 48,
                                       "minimum": 0.01,
                                       "description": "Expiration delay in hours after latest interaction"
+                                    }
+                                  },
+                                  "additionalProperties": false
+                                },
+                                "publicShare": {
+                                  "type": "object",
+                                  "properties": {
+                                    "isEnabled": {
+                                      "type": "boolean"
                                     }
                                   },
                                   "additionalProperties": false
@@ -24191,6 +24439,15 @@
                                     }
                                   },
                                   "additionalProperties": false
+                                },
+                                "publicShare": {
+                                  "type": "object",
+                                  "properties": {
+                                    "isEnabled": {
+                                      "type": "boolean"
+                                    }
+                                  },
+                                  "additionalProperties": false
                                 }
                               },
                               "additionalProperties": false
@@ -24337,6 +24594,15 @@
                                       "maximum": 48,
                                       "minimum": 0.01,
                                       "description": "Expiration delay in hours after latest interaction"
+                                    }
+                                  },
+                                  "additionalProperties": false
+                                },
+                                "publicShare": {
+                                  "type": "object",
+                                  "properties": {
+                                    "isEnabled": {
+                                      "type": "boolean"
                                     }
                                   },
                                   "additionalProperties": false
@@ -29510,6 +29776,50 @@
                                                   "responseMapping"
                                                 ],
                                                 "additionalProperties": false
+                                              },
+                                              {
+                                                "type": "object",
+                                                "properties": {
+                                                  "credentialsId": {
+                                                    "type": "string"
+                                                  },
+                                                  "baseUrl": {
+                                                    "type": "string"
+                                                  },
+                                                  "apiVersion": {
+                                                    "type": "string"
+                                                  },
+                                                  "task": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "Create speech"
+                                                    ]
+                                                  },
+                                                  "model": {
+                                                    "type": "string"
+                                                  },
+                                                  "input": {
+                                                    "type": "string"
+                                                  },
+                                                  "voice": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "alloy",
+                                                      "echo",
+                                                      "fable",
+                                                      "onyx",
+                                                      "nova",
+                                                      "shimmer"
+                                                    ]
+                                                  },
+                                                  "saveUrlInVariableId": {
+                                                    "type": "string"
+                                                  }
+                                                },
+                                                "required": [
+                                                  "task"
+                                                ],
+                                                "additionalProperties": false
                                               }
                                             ]
                                           }
@@ -30546,6 +30856,15 @@
                                     "maximum": 48,
                                     "minimum": 0.01,
                                     "description": "Expiration delay in hours after latest interaction"
+                                  }
+                                },
+                                "additionalProperties": false
+                              },
+                              "publicShare": {
+                                "type": "object",
+                                "properties": {
+                                  "isEnabled": {
+                                    "type": "boolean"
                                   }
                                 },
                                 "additionalProperties": false
@@ -33105,6 +33424,50 @@
                                                   "responseMapping"
                                                 ],
                                                 "additionalProperties": false
+                                              },
+                                              {
+                                                "type": "object",
+                                                "properties": {
+                                                  "credentialsId": {
+                                                    "type": "string"
+                                                  },
+                                                  "baseUrl": {
+                                                    "type": "string"
+                                                  },
+                                                  "apiVersion": {
+                                                    "type": "string"
+                                                  },
+                                                  "task": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "Create speech"
+                                                    ]
+                                                  },
+                                                  "model": {
+                                                    "type": "string"
+                                                  },
+                                                  "input": {
+                                                    "type": "string"
+                                                  },
+                                                  "voice": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "alloy",
+                                                      "echo",
+                                                      "fable",
+                                                      "onyx",
+                                                      "nova",
+                                                      "shimmer"
+                                                    ]
+                                                  },
+                                                  "saveUrlInVariableId": {
+                                                    "type": "string"
+                                                  }
+                                                },
+                                                "required": [
+                                                  "task"
+                                                ],
+                                                "additionalProperties": false
                                               }
                                             ]
                                           }
@@ -34154,6 +34517,15 @@
                                     "maximum": 48,
                                     "minimum": 0.01,
                                     "description": "Expiration delay in hours after latest interaction"
+                                  }
+                                },
+                                "additionalProperties": false
+                              },
+                              "publicShare": {
+                                "type": "object",
+                                "properties": {
+                                  "isEnabled": {
+                                    "type": "boolean"
                                   }
                                 },
                                 "additionalProperties": false
@@ -37328,6 +37700,15 @@
                                     }
                                   },
                                   "additionalProperties": false
+                                },
+                                "publicShare": {
+                                  "type": "object",
+                                  "properties": {
+                                    "isEnabled": {
+                                      "type": "boolean"
+                                    }
+                                  },
+                                  "additionalProperties": false
                                 }
                               },
                               "additionalProperties": false
@@ -37474,6 +37855,15 @@
                                       "maximum": 48,
                                       "minimum": 0.01,
                                       "description": "Expiration delay in hours after latest interaction"
+                                    }
+                                  },
+                                  "additionalProperties": false
+                                },
+                                "publicShare": {
+                                  "type": "object",
+                                  "properties": {
+                                    "isEnabled": {
+                                      "type": "boolean"
                                     }
                                   },
                                   "additionalProperties": false

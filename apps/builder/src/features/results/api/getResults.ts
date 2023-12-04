@@ -11,7 +11,7 @@ export const getResults = authenticatedProcedure
   .meta({
     openapi: {
       method: 'GET',
-      path: '/typebots/{typebotId}/results',
+      path: '/v1/typebots/{typebotId}/results',
       protect: true,
       summary: 'List results ordered by descending creation date',
       tags: ['Results'],
@@ -44,12 +44,22 @@ export const getResults = authenticatedProcedure
       },
       select: {
         id: true,
-        workspaceId: true,
         groups: true,
         collaborators: {
           select: {
             userId: true,
             type: true,
+          },
+        },
+        workspace: {
+          select: {
+            isSuspended: true,
+            isPastDue: true,
+            members: {
+              select: {
+                userId: true,
+              },
+            },
           },
         },
       },

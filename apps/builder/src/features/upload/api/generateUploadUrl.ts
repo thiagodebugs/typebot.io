@@ -147,7 +147,19 @@ const parseFilePath = async ({
       id: input.typebotId,
     },
     select: {
-      workspaceId: true,
+      workspace: {
+        select: {
+          plan: true,
+          isSuspended: true,
+          isPastDue: true,
+          members: {
+            select: {
+              userId: true,
+              role: true,
+            },
+          },
+        },
+      },
       collaborators: {
         select: {
           userId: true,
